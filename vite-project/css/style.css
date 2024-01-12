@@ -1,0 +1,133 @@
+:root {
+  --dark-blue: #00008b;
+  --light-blue: #add8e6;
+  --blue: #0000ff;
+  --dark-orange: #cc5500;
+  --yellow: #ffff00;
+  --orange: #ffa550;
+
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+}
+body.cool {
+  --primary: var(--dark-blue);
+  --secondary: var(--light-blue);
+  --tertiary: var(--blue);
+}
+body.warm {
+  --primary: var(--dark-orange);
+  --secondary: var(--yellow);
+  --tertiary: var(--orange);
+}
+.warm {
+  --primary: var(--orange);
+  --secondary: var(--yellow);
+  --tertiary: var(--orange);
+}
+.cool {
+  --primary: var(--dark-blue);
+  --secondary: var(--light-blue);
+  --tertiary: var(--blue);
+}
+body {
+  background-color: var(--primary);
+}
+h1 {
+  font-size: var(--h1);
+}
+.section-title {
+  font-size: var(--h1);
+}
+
+#header {
+  background-color: var(--primary);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 4vh;
+  color: var(--secondary);
+}
+#btn1 {
+  background-color: var(--secondary);
+  height: 60px;
+  width: 200px;
+  font-size: 1.5rem;
+  margin: 13px;
+}
+#btn2 {
+  background-color: var(--secondary);
+  height: 60px;
+  width: 200px;
+  font-size: 1.5rem;
+  margin: 13px;
+}
+#btn3 {
+  background-color: var(--secondary);
+  height: 60px;
+  width: 200px;
+  font-size: 1.5rem;
+  margin: 13px;
+}
+#btn4 {
+  background-color: var(--secondary);
+  height: 60px;
+  width: 200px;
+  font-size: 1.5rem;
+  margin: 13px;
+}
+#btn5 {
+  background-color: var(--secondary);
+  height: 60px;
+  width: 200px;
+  font-size: 1.5rem;
+  margin: 13px;
+}
+#btn6 {
+  background-color: var(--secondary);
+  height: 60px;
+  width: 200px;
+  font-size: 1.5rem;
+  margin: 13px;
+}
+#btn7 {
+  background-color: var(--secondary);
+  height: 30px;
+  width: 100px;
+  font-size: 0.75rem;
+  margin: 13px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+body {
+  background-color: var(--tertiary);
+}
+#text {
+  font-size: 4rem;
+  margin: 25px;
+}
+.card-name {
+  text-align: center;
+  margin: 20px;
+}
+.card-health {
+  text-align: center;
+  margin: 20px;
+}
+.card-height {
+  text-align: center;
+}
+.boxy {
+  background-color: var(--secondary);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px;
+  border-radius: 2rem;
+  padding: 20px;
+  height: 15vh;
+  width: 40vh;
+  align-items: center;
+  flex-direction: row;
+}
