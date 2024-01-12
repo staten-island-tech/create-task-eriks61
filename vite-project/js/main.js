@@ -10,7 +10,7 @@ async function createCard(){
       throw new Error(`HTTP error! Status: ${response.status}`);
     }
     const data = await response.json();
-    DOMselectors.quote.insertAdjacentHTML("beforeend", 
+    DOMselectors.quote.insertAdjacentHTML("beforeend",  
     )
   }
   catch {
