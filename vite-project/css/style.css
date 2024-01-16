@@ -51,14 +51,14 @@ h1 {
   height: 60px;
   width: 200px;
   font-size: 1.5rem;
-  margin: 13px;
+  margin-left: 500px;
 }
 #btn2 {
   background-color: var(--secondary);
   height: 60px;
   width: 200px;
   font-size: 1.5rem;
-  margin: 13px;
+  margin-left: 500px;
 }
 #btn3 {
   background-color: var(--secondary);
@@ -110,7 +110,7 @@ body {
 }
 .card-name {
   text-align: center;
-  margin: 20px;
+  margin: 30px;
 }
 .card-health {
   text-align: center;
@@ -119,7 +119,7 @@ body {
 .card-height {
   text-align: center;
 }
-.boxy {
+.quote {
   background-color: var(--secondary);
   flex-wrap: wrap;
   justify-content: space-between;
