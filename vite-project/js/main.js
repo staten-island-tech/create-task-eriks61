@@ -12,7 +12,7 @@ async function createCard(){
     }
     const data = await response.json();
     DOMselectors.quote.insertAdjacentHTML("beforeend", 
-    `<div id="quote"
+    `<div id="bird"
     <h2 class="card-name">${data.content}</h2>
     </div>`
     )
@@ -22,5 +22,10 @@ async function createCard(){
   }
 }
 createCard();
+
 DOMselectors.dislike.addEventListener("click", 
 createCard)
+
+DOMselectors.like.addEventListener("click", 
+createCard)
+
