@@ -23,6 +23,21 @@ async function createCard(){
 }
 createCard();
 
+async function store(){
+  try {
+    const response = await fetch(url);
+    if(!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+
+ 
+}
+catch (error){
+  console.error("error", error);
+}
+}
+
 DOMselectors.dislike.addEventListener("click", 
 createCard)
 
