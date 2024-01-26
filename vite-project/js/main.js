@@ -2,6 +2,7 @@
 import { DOMselectors } from './dom.js';
 
 const url = "https://api.quotable.io/random";
+let likedQuotes = [];
 
 async function createCard(){
   DOMselectors.quote.innerHTML=""
@@ -21,7 +22,7 @@ async function createCard(){
   console.error("error", error);
   }
 }
-createCard();
+
 
 async function store(){
   try {
@@ -38,9 +39,23 @@ catch (error){
 }
 }
 
+function addToArray(){
+  let likedQuotes = [];
+  const quoteContent = DOMselectors.quote.textContent;
+  if (quoteContent) {
+    likedQuotes.push(quoteContent);
+    console.log(likedQuotes);
+  }
+  
+}
+
 DOMselectors.dislike.addEventListener("click", 
 createCard)
 
-DOMselectors.like.addEventListener("click", 
-createCard)
-
+DOMselectors.like.addEventListener("click", function () {
+  console.log('clicked')
+  createCard();
+  addToArray();
+}
+)
+createCard()
