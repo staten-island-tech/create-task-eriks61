@@ -69,17 +69,24 @@ async function createCardDislike(){
 
 function showQuotes(){
   DOMselectors.quote.innerHTML = "";
-  likedQuotes.forEach((quote, index) => {
+  const copies = likedQuotes.slice();
+  for (let i = 0; i < copies.length-1; i++){
+    for (let j = 0; j< copies.length - 1 - i; j++){
+      if(copies[j].length > copies[j + 1].length){
+       
+        const temp = copies[j];
+        copies[j] = copies[j+1];
+        copies[j+1] = temp;
+      }
+    }
+  }
+  copies.forEach((quote, index) => {
     DOMselectors.quote.insertAdjacentHTML("beforeend", 
     `<div>
     <p>${index + 1}. ${quote}</p>
     </div>`)
   })
-}  
-
-
-
-
+}
 
 DOMselectors.dislike.addEventListener("click",
 createCardDislike)
